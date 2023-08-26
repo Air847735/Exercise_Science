@@ -154,34 +154,83 @@ frame4 = tk.Frame(root)
 frame4.pack(side='left',padx='25px',fill='both')
 
 def button1_Update():
-    text0 = entry10.get()
-    text1 = entry11.get()
-    print(text0)
-    print(text1)
-    db.reference("/PlayersInfo").set(text0)
+    number = entry10.get()
+    speed = entry11.get()
+    print(number)
+    print(speed)
+    db.reference("/waitForRecords_list/" + number).set(speed)
 
-button1 = tk.Button(frame4,text='Button1',height=1)
+button1 = tk.Button(frame4,text='Button1',height=1,command=button1_Update)
 button1.pack(side='top',pady='13px')
 
-button2 = tk.Button(frame4,text='Button1',)
+def button2_Update():
+    number = entry20.get()
+    speed = entry21.get()
+    print(number)
+    print(speed)
+    db.reference("/waitForRecords_list/" + number).set(speed)
+
+button2 = tk.Button(frame4,text='Button2',command=button2_Update)
 button2.pack(side='top',pady='13px')
 
-button3 = tk.Button(frame4,text='Button1',)
+def button3_Update():
+    number = entry30.get()
+    speed = entry31.get()
+    print(number)
+    print(speed)
+    db.reference("/waitForRecords_list/" + number).set(speed)
+
+button3 = tk.Button(frame4,text='Button3',command=button3_Update)
 button3.pack(side='top',pady='13px')
 
-button4 = tk.Button(frame4,text='Button1',)
+def button4_Update():
+    number = entry40.get()
+    speed = entry41.get()
+    print(number)
+    print(speed)
+    db.reference("/waitForRecords_list/" + number).set(speed)
+
+button4 = tk.Button(frame4,text='Button4',command=button4_Update)
 button4.pack(side='top',pady='13px')
 
-button5 = tk.Button(frame4,text='Button1',)
+def button5_Update():
+    number = entry50.get()
+    speed = entry51.get()
+    print(number)
+    print(speed)
+    db.reference("/waitForRecords_list/" + number).set(speed)
+
+button5 = tk.Button(frame4,text='Button5',command=button5_Update)
 button5.pack(side='top',pady='12px')
 
-button6 = tk.Button(frame4,text='Button1',)
+def button6_Update():
+    number = entry60.get()
+    speed = entry61.get()
+    print(number)
+    print(speed)
+    db.reference("/waitForRecords_list/" + number).set(speed)
+
+button6 = tk.Button(frame4,text='Button6',command=button6_Update)
 button6.pack(side='top',pady='12px')
 
-button7 = tk.Button(frame4,text='Button1',)
+def button7_Update():
+    number = entry70.get()
+    speed = entry71.get()
+    print(number)
+    print(speed)
+    db.reference("/waitForRecords_list/" + number).set(speed)
+
+button7 = tk.Button(frame4,text='Button7',command=button7_Update)
 button7.pack(side='top',pady='12px')
 
-button8 = tk.Button(frame4,text='Button1',)
+def button8_Update():
+    number = entry80.get()
+    speed = entry81.get()
+    print(number)
+    print(speed)
+    db.reference("/waitForRecords_list/" + number).set(speed)
+
+button8 = tk.Button(frame4,text='Button8',command=button8_Update)
 button8.pack(side='top',pady='12px')
 
 
