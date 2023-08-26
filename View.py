@@ -17,6 +17,7 @@ import cv2
     ---------------------         button            entry60           entry61         button6
                                                     entry70           entry71         button7
                                                     entry80           entry81         button8
+                                                 更新按鈕  ====>  button_All_Update
 ---------------------------------------------------------------------------------------------------
 """
 
@@ -147,6 +148,11 @@ for i in range(0,check_frame3_len):
     print(entry_frame3[i])
     print(db.reference("/waitForRecord_list/" + check_frame3[i]).get())
     entry_frame3[i].insert(0 , db.reference("/waitForRecord_list/" + check_frame3[i]).get())
+
+def button_All_Update_command():
+    # 全部Entry更新內容
+
+button_All_Update = tk.Button(frame3,text='Update_All',height=2,command=button_All_Update_command)
 
 
 #frame4
